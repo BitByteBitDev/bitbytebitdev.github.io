@@ -1,0 +1,61 @@
+.arrowButton {
+    --primary-color: #bbff67;
+    --secondary-color: #000000;
+    --hover-color: #0077ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color) !important;
+    padding: 0.75em 1.35em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.3s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+}
+
+.arrowButton .arrowWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowButton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.3s;
+}
+
+.arrowButton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.3s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+.arrowButton:hover {
+    background-color: var(--hover-color);
+    color: #fff !important;
+}
+
+.arrowButton:hover .arrow {
+    background: #fff;
+}
+
+.arrowButton:hover .arrow:before {
+    right: 0;
+    border-color: #fff !important;
+}

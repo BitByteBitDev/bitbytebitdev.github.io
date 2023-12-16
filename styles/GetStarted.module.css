@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.getStarted {
+    background-color: #002b5d;
+    width: 75%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #004da4;
+}
+
+.getStartedText p {
+    color: lightgrey !important;
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
