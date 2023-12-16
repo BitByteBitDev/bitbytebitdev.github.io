@@ -9,7 +9,7 @@ interface ArrowButtonProps {
 const ArrowButton: React.FC<ArrowButtonProps> = ({ text }) => {
     return (
         <>
-            <Link href='/courses'>
+            <Link href='/courses' passHref={true}>
             <button className={styles.arrowButton}>
                 {text}
                 <div className={styles.arrowWrapper}>
