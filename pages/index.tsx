@@ -8,7 +8,6 @@ import ThreeDButton from '../components/ThreeDButton';
 import * as ga from '../lib/ga';
 import GetStarted from '../components/GetStarted';
 
-
 const Home: NextPage = () => {
     return (
         <div className={styles.container}>
