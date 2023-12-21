@@ -45,9 +45,6 @@ const MainNavbar: React.FC = () => {
                             <Nav.Link className='me-4' target='_blank' href='https://bitbytebitdev.beehiiv.com/subscribe'>
                                 Newsletter
                             </Nav.Link>
-                            <Nav.Link href='/contact'>
-                                Contact
-                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
