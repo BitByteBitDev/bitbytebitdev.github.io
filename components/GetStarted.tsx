@@ -17,8 +17,6 @@ const GetStarted: React.FC = () => {
                     alt='learning'
                     width='300'
                     height='340'
-                    data-aos='zoom-in-right'
-                    data-aos-once='true'
                 />
                 
             </div>

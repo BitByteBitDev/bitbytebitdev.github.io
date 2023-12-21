@@ -5,8 +5,6 @@ import MainNavbar from '../components/MainNavbar';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -31,12 +29,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             router.events.off('routeChangeComplete', handleRouteChange);
         };
     }, [router.events]);
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-        });
-    }, []);
 
     return (
         <>

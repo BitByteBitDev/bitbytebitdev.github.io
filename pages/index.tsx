@@ -109,17 +109,12 @@ const Home: NextPage = () => {
                     <div>
                         <h1
                             className={styles.title}
-                            data-aos='flip-up'
-                            data-aos-once='true'
                         >
                             Learning <span className={styles.inTitle}>to code</span> is for everyone!
                         </h1>
 
                         <h5
                             className={styles.description}
-                            data-aos='slide-right'
-                            data-aos-once='true'
-                            data-aos-delay='100'
                         >
                             Whether you're a beginner taking your first steps into the world of programming or an experienced developer looking to sharpen your skills, our diverse range of coding courses has something for everyone.
                         </h5>
@@ -127,9 +122,6 @@ const Home: NextPage = () => {
                         <Link href='/courses' passHref={true}>
                             <div
                                 className={styles.coursesBtnWrapper}
-                                data-aos='slide-right'
-                                data-aos-once='true'
-                                data-aos-delay='200'
                             >
                                 <div className={styles.viewCoursesBtn}>
                                     <ThreeDButton text='View Courses' />
@@ -139,8 +131,6 @@ const Home: NextPage = () => {
                     </div>
                     <div
                         className={`d-flex align-items-center justify-content-center ${styles.aiImage}`}
-                        data-aos='zoom-in-right'
-                        data-aos-once='true'
                     >
                         <Image
                             src='/illustrations/proud-coder.svg'
@@ -156,16 +146,14 @@ const Home: NextPage = () => {
                 <h2 className={styles.sectionTitle}>
                         Why Bit Byte Bit?
                     </h2>
-                <section className={`w-75`}>
+                <section className={styles.whySection}>
                     
-                    <div className='d-flex flex-row justify-content-between align-items-center flex-wrap'>
+                    <div className={`${styles.whyItem} ${styles.whyItemReverse}`}>
                         <Image
                             src='/illustrations/online-learning.svg'
                             alt='learning'
                             width='400'
-                            height='450'
-                            data-aos='zoom-in-right'
-                            data-aos-once='true'
+                            height='400'
                         />
                         <div className={styles.whyInformation}>
                             <h2 className={styles.whyTitle}>
@@ -178,8 +166,8 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section className={`w-75`}>
-                    <div className='d-flex flex-row justify-content-between align-items-center flex-wrap'>
+                <section className={styles.whySection}>
+                    <div className={styles.whyItem}>
                         <div className={styles.whyInformation}>
                             <h2 className={styles.whyTitle}>
                                 Earn certificates
@@ -191,23 +179,19 @@ const Home: NextPage = () => {
                         <Image
                             src='/illustrations/certificate.svg'
                             alt='learning'
-                            width='270'
+                            width='400'
                             height='400'
-                            data-aos='zoom-in-right'
-                            data-aos-once='true'
                         />
                     </div>
                 </section>
 
-                <section className={`w-75`}>
-                    <div className='d-flex flex-row justify-content-between align-items-center flex-wrap'>
+                <section className={styles.whySection}>
+                    <div className={`${styles.whyItem} ${styles.whyItemReverse}`}>
                         <Image
                             src='/illustrations/dev-focus.svg'
                             alt='learning'
                             width='400'
                             height='400'
-                            data-aos='zoom-in-right'
-                            data-aos-once='true'
                         />
                         <div className={styles.whyInformation}>
                             <h2 className={styles.whyTitle}>
@@ -220,8 +204,8 @@ const Home: NextPage = () => {
                     </div>
                 </section>
 
-                <section className={`w-75 mb-5`}>
-                    <div className='d-flex flex-row justify-content-between align-items-center flex-wrap'>
+                <section className={styles.whySection}>
+                    <div className={styles.whyItem}>
                         <div className={styles.whyInformation}>
                             <h2 className={styles.whyTitle}>
                                 Money-back guarantee
@@ -235,8 +219,6 @@ const Home: NextPage = () => {
                             alt='learning'
                             width='400'
                             height='400'
-                            data-aos='zoom-in-right'
-                            data-aos-once='true'
                         />
                     </div>
                 </section>
@@ -249,8 +231,6 @@ const Home: NextPage = () => {
                     </h2>
                     <div
                         className='mt-4 mb-5'
-                        data-aos='flip-up'
-                        data-aos-once='true'
                     >
                         <Accordion>
                             <Accordion.Item eventKey='0'>

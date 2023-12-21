@@ -12,8 +12,6 @@ const InstructorBox: React.FC = () => {
                     alt='learning'
                     width='300'
                     height='300'
-                    data-aos='zoom-in-right'
-                    data-aos-once='true'
                     style={{borderRadius: '50%'}}
                 />
                 <div className={styles.instructorBoxText}>
