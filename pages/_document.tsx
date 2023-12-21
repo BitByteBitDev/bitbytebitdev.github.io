@@ -19,7 +19,6 @@ export default class MyDocument extends Document {
                             gtag('config', '${process.env.GOOGLE_ANALYTICS}', {
                             page_path: window.location.pathname,
                             });
-                            gtag('config', '${process.env.GOOGLE_ADS}');
                         `,
                         }}
                     />

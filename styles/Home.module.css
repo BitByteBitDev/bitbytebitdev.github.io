@@ -139,6 +139,10 @@
     color: #4d4d4d;
 }
 
+.marginAboveInstructor {
+    margin: 4rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .main {

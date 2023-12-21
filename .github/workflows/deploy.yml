@@ -28,12 +28,12 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
-      # env:
-      #     GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
+      env:
+          GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
       #     GOOGLE_ADS: ${{ secrets.GOOGLE_ADS }}
     - run: npm run export
-      # env:
-      #     GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
+      env:
+          GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
       #     GOOGLE_ADS: ${{ secrets.GOOGLE_ADS }}
     - name: Remove Jekyll
       run: touch ./out/.nojekyll

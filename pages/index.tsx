@@ -7,6 +7,7 @@ import Image from 'next/image';
 import ThreeDButton from '../components/ThreeDButton';
 import * as ga from '../lib/ga';
 import GetStarted from '../components/GetStarted';
+import InstructorBox from '../components/InstructorBox';
 
 const Home: NextPage = () => {
     return (
@@ -149,6 +150,8 @@ const Home: NextPage = () => {
                         />
                     </div>
                 </section>
+                <div className={styles.marginAboveInstructor}></div>
+                <InstructorBox />
                 <div className='mt-5'></div>
                 <h2 className={styles.sectionTitle}>
                         Why Bit Byte Bit?

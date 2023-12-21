@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.instructorBox {
+    background-color: #002b5d;
+    width: 75%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    border: 1px solid #004da4;
+}
+
+.instructorBoxText p {
+    color: lightgrey !important;
+    font-weight: 300;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.instructorBoxText {
+    width: 60%;
+}

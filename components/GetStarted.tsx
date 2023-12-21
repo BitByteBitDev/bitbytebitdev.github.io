@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/GetStarted.module.css';
 import ArrowButton from './ArrowButton';
@@ -11,7 +10,6 @@ const GetStarted: React.FC = () => {
                 <div className={styles.getStartedText}>
                     <h2 style={{fontWeight: 'bold'}}>Excited to learn programming?</h2>
                     <p>Take a look at our courses and get started today!</p>
-                    {/* <Button variant='primary'>View Courses</Button> */}
                     <ArrowButton text="View Courses" />
                 </div>
                 <Image
